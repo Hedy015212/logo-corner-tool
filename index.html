@@ -12,9 +12,9 @@
   <main>
     <h1>Logo 角标工具</h1><p class="intro">上传一张底图后，会同时生成 6 种 Logo 效果。统一调整位置、大小和边距后，可分别下载。</p>
     <div class="layout"><section class="panel" aria-label="设置">
-      <div class="group"><h2>上传底图</h2><label for="photo">选择图片</label><input id="photo" type="file" accept="image/*"><p class="hint">Logo 已内置为你提供的 4 个款式。</p></div>
+      <div class="group"><h2>上传底图</h2><label for="photo">选择图片</label><input id="photo" type="file" accept="image/*"><p class="hint">Logo 已内置为你提供的 6 个款式。</p></div>
       <div class="group"><h2>角标设置</h2><div class="choices"><label class="choice"><input type="radio" name="position" value="left" checked>左上角</label><label class="choice"><input type="radio" name="position" value="right">右上角</label></div><label for="size">统一 Logo 宽度 <span class="readout" id="sizeValue">18%</span></label><input id="size" type="range" min="5" max="50" value="18"><label for="padding">统一边距 <span class="readout" id="paddingValue">1%</span></label><input id="padding" type="range" min="0" max="15" value="1"><p class="hint">下方每个 Logo 也可单独调整。</p></div>
-    </section><section class="preview" aria-label="四种效果预览"><div class="empty" id="empty">请上传一张底图<br>系统会自动展示 4 种 Logo 效果</div><div class="grid" id="grid" hidden></div></section></div>
+    </section><section class="preview" aria-label="六种效果预览"><div class="empty" id="empty">请上传一张底图<br>系统会自动展示 6 种 Logo 效果</div><div class="grid" id="grid" hidden></div></section></div>
   </main>
   <script>
     const logoOptions=[{name:'SunArk 彩色（白底）',file:'sunark-color-whitebg.jpg'},{name:'SunEvo 蓝色（白底）',file:'sunevo-blue-whitebg.jpg'},{name:'SunEvo × SunArk 彩色',file:'combo-color.png'},{name:'SunArk 白色',file:'sunark-white.png'},{name:'SunEvo 白色',file:'sunevo-white.png'},{name:'SunEvo × SunArk 白色',file:'combo-white.png'}];
